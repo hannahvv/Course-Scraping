@@ -70,7 +70,7 @@ if __name__ == "__main__":
         print("valid course")
         data = getTeachers(url)
         name = input("Enter Instructor Name from the Course to view more information (i.e. Bob Smith): \n")
-        if data.has_key(name):
+        if name in data:
             getAverageReviews(data[name])
         else:
             print("There does not exist a page for the instructor entered.")
